@@ -57,10 +57,6 @@ int particionaInicio(int *v, int inicio, int fim) {
 int particionaAleatorio(int *v, int inicio, int fim) {
     int randIndex = inicio + rand() % (fim - inicio + 1);
     int pivo = v[randIndex];
-    
-    v[randIndex] = v[inicio];
-    v[inicio] = pivo;
-
     int esquerda = inicio + 1;
     int direita = fim;
 
